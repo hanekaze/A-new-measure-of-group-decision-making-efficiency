@@ -1,0 +1,33 @@
+$Scores
+  Subject Condition          D1           D2
+1       a       AND -0.03891781  0.001293356
+2       b       AND  0.19174578  0.149786128
+3       c       AND  0.08581198  0.001136921
+4       d       AND  0.27746049  0.041924133
+5       e       AND  0.01976272  0.015852197
+6       f       AND -0.36361412 -0.025480309
+7       g       AND -0.17224904 -0.184512426
+
+$MeanAT
+function (v) 
+.approxfun(x, y, v, method, yleft, yright, f)
+<bytecode: 0x000000000b16bc60>
+<environment: 0x0000000005586818>
+
+$PF
+$PF[[1]]
+function (v) 
+.approxfun(x, y, v, method, yleft, yright, f)
+<bytecode: 0x000000000b16bc60>
+<environment: 0x000000001758cd48>
+
+$PF[[2]]
+function (v) 
+.approxfun(x, y, v, method, yleft, yright, f)
+<bytecode: 0x000000000b16bc60>
+<environment: 0x00000000175ac568>
+
+
+$medianRT
+[1] 0.5160845 0.5273359 0.5233827 0.5926894 0.4930661 0.5748226 0.6503806
+
