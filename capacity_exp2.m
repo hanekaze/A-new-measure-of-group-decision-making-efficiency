@@ -69,7 +69,7 @@ for tt=1:13
     color=(color-cn)/(cm-cn)*0.8*ones(1,3);
     
     %% plot
-    plot (t,cb,'k.','MarkerSize',10,'Color',color(tt,:),'DisplayName','C(t)')
+    plot (t,ct,'k.','MarkerSize',10,'Color',color(tt,:),'DisplayName','C(t)')
     hold on
 end
 
@@ -116,9 +116,9 @@ for tt=1:10
     f_rt=edf(t,rt);
     
     % calculate capacity coefficient
-    cb = (log(f_r1.*f_r2))./(log(f_rt));
+    ct = (log(f_r1.*f_r2))./(log(f_rt));
     
-    cb(cb==0)=nan;
+    ct(ct==0)=nan;
     
     %% color code
     % sdyam/Smax for each group (collective benefit)
@@ -135,7 +135,7 @@ for tt=1:10
     color=(color-cn)/(cm-cn)*0.8*ones(1,3);
     
     %% plot
-    plot (t,cb,'k.','MarkerSize',10,'Color',color(tt,:),'DisplayName','C(t)')
+    plot (t,ct,'k.','MarkerSize',10,'Color',color(tt,:),'DisplayName','C(t)')
     hold on
     clear data_uncommun data_commun
 end
