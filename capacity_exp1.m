@@ -43,7 +43,7 @@ for tt=1:7
     % calculate capacity coefficient
     ct = (log(F_r1.*F_r2))./(log(F_rt));
     
-    ct(cb==0)=nan;
+    ct(ct==0)=nan;
     
     %% color code
     % sdyam/Smax for each group (collective benefit)
@@ -59,7 +59,7 @@ for tt=1:7
     color=(color-cn)/(cm-cn)*0.6*ones(1,3);
     
     %% plot
-    plot (t,cb,'k.','MarkerSize',10,'Color',color(tt,:),'DisplayName','C(t)')
+    plot (t,ct,'k.','MarkerSize',10,'Color',color(tt,:),'DisplayName','C(t)')
     hold on
 end
 
